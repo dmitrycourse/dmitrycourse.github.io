@@ -1,5 +1,30 @@
+@font-face {
+    font-family: 'FrankGot';
+    src: url('../fonts/framd.eot');
+    src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/8277.eot');
+    src: local('☺'), url('../fonts/8277.woff') format('woff'), url('../fonts/8277.ttf') format('truetype'), url('../fonts/8277.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahn';
+    src: url('../fonts/12002.eot');
+    src: local('☺'), url('../fonts/12002.woff') format('woff'), url('../fonts/12002.ttf') format('truetype'), url('../fonts/12002.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
-    font-family: Aria sans-serif;
+    font-family: FrankGot, Aria, sans-serif;
 }
 main{
     width: 100%;
@@ -10,18 +35,19 @@ nav{
     height: 60px;
     background-color: #344051;
     position: fixed;
+    z-index: 10;
+}
+.menu li:last-child{
+    margin-right: 0px;
 }
 .logo{
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 60px;
-    padding-left: 260px;
     float: left;
 }
 .menu{
     float: left;
-    padding-left: 315px;
-
 }
 .menu li{
     float: left;
@@ -40,13 +66,14 @@ nav{
 }
 .title__container{
     float: left;
-    margin: 285px 0px 0px 290px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
 }
 .title__container h1{
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 71px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
 }
 .title__container h4{
     margin-top: 25px;
@@ -78,14 +105,13 @@ nav{
     font-size: 25px;
     color: #263244;
     text-transform: uppercase;
-    font-weight: bold;
     margin-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .band{
-    margin: 0 0 0 47.5%;
+    margin: 0 0 0 45.5%;
     height: 4px;
-    width: 70px;
+    width: 9%;
     background-color: #d17700;
     transition: transform 2s ;
 
@@ -96,9 +122,8 @@ nav{
 
 }
 .info p{
+    font-family: Calibri, Aria sans-serif;
     font-size: 16px;
-    width: 50%;
-    margin-left: 25%;
     margin-bottom: 25px;
 }
 .info input{
@@ -108,95 +133,100 @@ nav{
     background: none;
     border-radius: 5px;
     color: #6d7682;
-    font-size: 13px;
     padding: 0px 16px 0px 25px;
     background:  url(../img/dl.png) 5% 50% no-repeat;
     font-size: 16px;
 }
+
+
 .skill{
     width: 100%;
     height: 500px;
     margin-top: 70px;
     background: url(../img/skill.jpg) no-repeat fixed;
+    background-size: cover;
 }
 .skill-item{
     text-align: center;
-    margin-top: 130px;
-
+    margin-top: 100px;
 }
 .item1{
     width: 25%;
     float: left;
-    padding-left: 100px;
     font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
 }
 .item1 span{
     color: #d17700;
     font-size: 16px;
     line-height: 50px;
     font-size: 18px;
+    font-family: Bahn, Aria, sans-serif;
 }
 .item2 span{
     color: #d17700;
     font-size: 16px;
     line-height: 50px;
     font-size: 18px;
-
+    font-family: Bahn, Aria, sans-serif;
 }
 .item3 span{
     color: #d17700;
     font-size: 16px;
     line-height: 50px;
     font-size: 18px;
-
+    font-family: Bahn, Aria, sans-serif;
 }
 .item4 span{
     color: #d17700;
     font-size: 16px;
     line-height: 50px;
     font-size: 18px;
-
+    font-family: Bahn, Aria, sans-serif;
 }
 .item2{
     width: 25%;
     float: left;
-    padding-left: 50px;
     font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
 
 }
 .item3{
     width: 25%;
     float: left;
-    padding-left: 50px;
-    padding-top: -100px;
     font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
 
 }
 .item4{
     width: 25%;
     float: left;
-    padding-left: 50px;
-    padding-right: 100px ;
     font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
 
 }
+
+
 .case{
     width: 100%;
-    text-align: center;
+    margin-bottom: 115px;
 }
 .case p{
     font-size: 16px;
     margin: 30px 0;
-
+    font-family: Calibri, Aria, sans-serif;
+    text-align: center;
+}
+.case-name p{
+    text-align: left;
 }
 .case img{
     width: 100%;
-    padding-right: 270px;
+    margin-bottom: 50px;
 }
 .case-client{
-    width: 25%;
-    margin-left: 20%;
-    margin-top: 50px;
+    display: inline-block;
+    margin-top: 20px;
 }
 .case-client h3{
     font-size: 25px;
@@ -208,16 +238,20 @@ nav{
     font-size: 16px;
     margin: 15px 0;
     text-align: left;
+    font-family: Calibri, Aria, sans-serif;
 }
 .case-client a{
-    padding-right: 100%;
     font-size: 16px;
     color: blue;
     text-decoration: underline;
+    font-family: Calibri, Aria, sans-serif;
+}
+.case-block{
+    position: relative;
+    width: 100%;
 }
 .case h3{
     font-size: 25px;
-    font-weight: bold;
     color: #263244;
 }
 .case-client input{
@@ -235,26 +269,43 @@ nav{
 
 .case-name{
     display: inline-block;
-    width: 50%;
+    width: 77%;
     text-align: left;
-    margin-right: -40%;
-    margin-top: -220%;
+
+    font-family: Calibri, Aria, sans-serif;
+}
+.case-name h3{
+    font-family: FrankGot, Aria, sans-serif;
 }
 
+
 .calculator{
+    margin-top: 30px;
     width: 100%;
     text-align: center;
+}
+.calculator .col-10{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+    padding: 0px 40px;
 }
 .calculator h3{
     color: #1c2534;
     font-size: 30px;
-    font-weight: bold;
     text-align: left;
-    margin: 20px 0 20px 25%;
+    margin: 20px 0;
 }
-
+.calculator input{
+    background-color: #63b5ae;
+    font-size: 20px;
+    color: #fff;
+    margin: 30px 41%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
 .calculator select{
-    width: 50%;
+    width: 100%;
     background-color: #eeeeee;
     height: 50px;
     padding: 10px 0px 10px 15px;
@@ -263,9 +314,8 @@ nav{
     margin-bottom: 25px;
 }
 .band2{
-    margin: 0 0 0 25%;
     height: 4px;
-    width: 50%;
+    width: 100%;
     background-color: #eeeeee;
     margin-top: 20px;
     margin-bottom:  60px;
@@ -273,46 +323,43 @@ nav{
 .result{
     font-size: 20px;
     text-align: left;
-    font-weight: bold;
-    margin-left: 25%;
 }
 .zero{
-    margin-left: 60%;
+    margin-left: 93%;
 }
 .zero1{
-    margin-left: 56.6%;
+    margin-left: 89.2%;
 }
+
+
 .statistics{
-    margin-top: 150px;
+    margin-top: 30px;
     width: 100%;
     height: 500px;
     background: url(../img/stat.png) 0 0 no-repeat fixed;
     text-align: center;
+    background-size: cover;
 }
 .statistics-item1{
     width: 25%;
     float: left;
-    padding-left: 200px;
     margin-top: 80px;
 }
 .statistics-item2{
     width: 25%;
     float: left;
-    padding-left: 90px;
     margin-top: 80px;
 
 }
 .statistics-item3{
     width: 25%;
     float: left;
-    padding-left: 10px;
     margin-top: 80px;
 
 }
 .statistics-item4{
     width: 25%;
     float: left;
-    padding-right: 200px;
     margin-top: 75px;
 
 }
@@ -325,6 +372,8 @@ nav{
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 15px;
+    font-family: Calibri, Aria, sans-serif;
+
 }
 .statistics img{
     margin-bottom: 15px;
@@ -334,14 +383,14 @@ nav{
     width: 100%;
 }
 .comment img{
-    margin: 50px 0 20px 0;
+    margin: 50px 0px;
 
 }
 .comment p{
     font-size: 16px;
-    width: 50%;
-    margin-left: 25%;
     margin-bottom: 25px;
+    font-family: Calibri, Aria, sans-serif;
+
 }
 .otz{
     font-weight: bold;
@@ -370,32 +419,33 @@ nav{
     border-radius: 50%;
     background-color: #cfd2d7;
 }
+
 .contacts{
     color: #fff;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
     width: 100%;
     height: 800px;
     background:  url(../img/contact.png) 50% 0 no-repeat;
+    background-size: cover;
 }
 .con_text{
     color: #fff;
 }
 .contacts p{
-    margin: 30px 0 10px 0;
+    margin: 30px 0px;
     font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
 }
 .contacts h3{
     font-size: 20px;
-    font-weight: bold;
     margin: 200px 0 50px 0;
     text-transform: uppercase;
 }
 .contacts-item1{
     float: left;
-    width: 23.3%;
+    width: 33.3%;
     margin-top: 50px;
-    margin-left: 10%;
 
 }
 .contacts-item2{
@@ -408,9 +458,8 @@ nav{
 
 .contacts-item3{
     float: left;
-    width: 23.3%;
+    width: 33.3%;
     margin-top: 50px;
-    margin-right: 10%;
 
 }
 .contacts-item3 img{
@@ -422,27 +471,22 @@ nav{
 .contacts-item1 img{
     padding-bottom: 20px;
 }
-.contacts-item1 h5{
+.contacts h5{
     font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
 }
-.contacts-item2 h5{
-    font-size: 16px;
-}
-.contacts-item3 h5{
-    font-size: 16px;
-}
+
 .contacts_imput{
     display: inline-block;
-    width: 25%;
+    width: 49.7%;
     font-size: 16px;
     padding: 10px 0px 15px 10px;
 }
 .contacts textarea{
     display: block;
-    width: 50%;
+    width: 100%;
     height: 100px;
     margin-top: 16px;
-    margin-left: 25%;
     padding: 10px 0 15px 10px;
     font-size: 16px;
 }
@@ -453,21 +497,22 @@ nav{
     background: none;
     border-radius: 5px;
     color: #fff;
-    font-size: 13px;
     padding: 0px 16px;
-    margin: 18px 14px 0px 14px;
+    margin: 20px 0px;
     font-size: 20px;
 }
 .map {
     width: 100%;
     height: 350px;
     background:  url(../img/map2.png) 0 0 no-repeat;
+    background-size: cover;
 }
 footer{
     width: 100%;
     height: 50px;
     background-color: #354051;
     line-height: 50px;
+    font-family: Aria, sans-serif;
     text-align: center;
     color:#fff;
     opacity: 0;
@@ -483,6 +528,7 @@ footer{
     color: #fff;
     display: inline-block;
     transform: scale(0.9);
+    text-decoration: none;
 }
 .menu li a:visited{
     color:#fff;
@@ -495,15 +541,15 @@ footer{
     transform: scale(1);
 }
 
-.title__container input, .info input, .contacts_sub, .case-client input{
+.title__container input, .info input, .contacts_sub, .case-client input, .calculator input{
     transition: all 0.2s;
     transform: scale(1);
 }
-.title__container input:hover, .info input:hover, .case-client input:hover{
+.title__container input:hover, .info input:hover, .case-client input:hover, .calculator input:hover{
     background: #344051;
     color: #fff;
 }
-.title__container input:active, .info input:active, .contacts_sub:active, .case-client input:active{
+.title__container input:active, .info input:active, .contacts_sub:active, .case-client input:active, .calculator input:active{
     transform: scale(1.1);
 }
 .title__container{
@@ -562,7 +608,7 @@ footer{
     }
     to{
         opacity: 1;
-        margin-left: 290px;
+        margin-left: 0px;
     }
 }
 .contacts_sub:hover{
@@ -659,3 +705,271 @@ footer{
 .loaded .preloader {
   display: none;
 }
+.white-btn:visited{
+    color: #fff;
+}
+
+@media (max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    .tite__container input{
+        border-right: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1399px){
+    .zero{
+        margin-left: 91.4%;
+    }
+    .zero1{
+        margin-left: 87%;
+    }
+    .calculator input{
+        margin: 30px 39%;
+    }
+    .case-name{
+        width: 73%;
+    }
+    .case-client {
+        position: relative;
+        top: -15px;
+    }
+@media (max-width: 1200px){
+    .zero{
+        margin-left: 89.4%;
+    }
+    .zero1{
+        margin-left: 84%;
+    }
+    .calculator input{
+        margin: 30px 37%;
+    }
+    .case-name{
+        width: 68%;
+    }
+    .case-client {
+        position: relative;
+        top: -63px;
+    }
+}
+@media (max-width: 992px){
+    .zero{
+        margin-left: 85.4%;
+    }
+    .zero1{
+        margin-left: 78%;
+    }
+    .calculator input{
+        margin: 30px 32%;
+    }
+    .case-name{
+        width: 100%;
+        margin-top: -40px;
+    }
+
+    .skill{
+        height: 570px;
+    }
+    .item1{
+    width: 50%;
+    float: left;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+    }
+    .item2{
+    width: 50%;
+    float: left;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+
+    }
+    .item3{
+    width: 50%;
+    float: left;
+    padding-top: -100px;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+    margin-top: 40px;
+
+    }
+    .item4{
+    width: 50%;
+    float: left;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+    margin-top: 40px;
+
+
+    }
+    .skill-item {
+    margin-top: 50px;
+    }
+
+    .statistics-item1{
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+}
+.statistics-item2{
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+
+}
+.statistics-item3{
+    width: 50%;
+    float: right;
+    margin-top: 80px;
+
+}
+.statistics-item4{
+    width: 50%;
+    float: left;
+    margin-top: 75px;
+
+}
+    .statistics{
+        height: 600px;
+    }
+
+
+    .contacts-item1{
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+
+}
+.contacts-item2{
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+
+
+}
+
+.contacts-item3{
+    float: left;
+    width: 100%;
+    margin: 32px 0px;
+
+}
+
+    .contacts_imput{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 10px 0px 15px 10px;
+}
+    .contacts{
+        height: 960px;
+    }
+}
+@media (max-width: 768px){
+    .zero{
+        margin-left: 80.4%;
+    }
+    .zero1{
+        margin-left: 70%;
+    }
+    .calculator input{
+        margin: 30px 25%;
+    }
+    .case-name{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 535px){
+    .zero{
+        margin-left: 74.4%;
+    }
+    .zero1{
+        margin-left: 62%;
+    }
+    .calculator input{
+        margin: 30px 23%;
+    }
+}
+@media (max-width: 575px){
+    .item1{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+    }
+    .item2{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+
+    }
+    .item3{
+    width: 100%;
+    float: left;
+    padding-top: -100px;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+    margin-top: 40px;
+
+    }
+    .item4{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    font-family: Calibri, Aria, sans-serif;
+    margin-top: 40px;
+
+
+    }
+
+    .statistics-item1{
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+.statistics-item2{
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+
+}
+.statistics-item3{
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+
+}
+.statistics-item4{
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+
+}
+    .statistics{
+        height: 900px;
+    }
+
+    .skill{
+        height: 840px;
+    }
+}
+
